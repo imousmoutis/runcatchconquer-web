@@ -1,0 +1,62 @@
+<div class="absolute-center seperate-div one-div-page">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-lg-12">
+
+				<div class="pikachu">
+					<div class="pikachu-head">
+						<div class="pikachu-face">
+							<div class="pikachu-chin"></div>
+							<div class="pikachu-eye-right"></div>
+							<div class="pikachu-eye-left"></div>
+							<div class="pikachu-cheek-right"></div>
+							<div class="pikachu-cheek-left"></div>
+							<div class="pikachu-nose"></div>
+							<div class="pikachu-mouth-open"></div>
+							<div class="pikachu-mouth"></div>
+						</div>
+						<div class="pikachu-ear-right"></div>
+						<div class="pikachu-ear-left"></div>
+					</div>
+					<div class="pikachu-body">
+						<div class="pikachu-foot-right"></div>
+						<div class="pikachu-foot-left"></div>
+						<div class="pikachu-body-upper">
+							<div class="pikachu-tail">
+								<div class="pikachu-tail-part part-one"></div>
+								<div class="pikachu-tail-part part-two"></div>
+								<div class="pikachu-tail-part part-three"></div>
+							</div>
+							<div class="pikachu-torso"></div>
+							<div class="pikachu-arm-right"></div>
+							<div class="pikachu-arm-left"></div>
+						</div>
+					</div>
+				</div>
+
+				<h3 class="text-center">{{'LoginPage_Header' | translate}}</h3>
+
+				<form class="form-signin light-div" name="lform">
+
+					<div class="alert alert-danger alert-dismissible" role="alert" data-ng-if="loginFailed">
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					  <strong>{{'Warning' | translate}}</strong> {{'LoginFailed' | translate}}
+					</div>
+
+					<input type="text" class="form-control" placeholder="{{'Username' | translate}}" data-ng-required="true" autofocus="" data-ng-model="username" /> 
+					<input type="password" class="form-control" placeholder="{{'Password' | translate}}" data-ng-required="true" data-ng-model="password" /> <br>
+					
+					<button type="submit" class="btn btn-default btn-lg" data-ng-click="login()" ng-disabled="lform.$invalid">{{'Login' | translate}}</button> <br>
+					<br>
+					<a href="#register">{{'CreateAccount' | translate}}</a>
+				</form>
+
+			</div>
+
+		</div>
+
+	</div>
+</div>

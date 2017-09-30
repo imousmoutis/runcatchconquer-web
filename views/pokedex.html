@@ -1,0 +1,46 @@
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-lg-12">
+
+			<br>
+
+			<div class="alert alert-info" role="alert"> {{'PokedexHeader1' | translate}} <strong>{{caught}} pokemon</strong> {{'PokedexHeader2' | translate}}</div>
+					
+		</div>
+
+	</div>
+
+</div>
+
+<div class="white-div">
+
+	<div class="container">
+				
+		<div class="row pokemon-list">
+
+			<div class="col-md-12">
+						
+				<div class="row">
+
+					<div class="absolute-center col-lg-2 col-xs-4" 
+						data-ng-repeat="pokemon in pokemons">
+						<div class="row pokemon-icon" data-ng-class="{caught: pokemon.caught}" data-ng-click="pokemon.caught && release(pokemon)">
+							<div class="col-md-12"><div class="pokemon-{{pokemon._id}}"></div></div>
+								<div><p data-ng-bind-html="pokemon.name | html"></p></div>
+							</div>
+						</div>
+
+					</div>
+					
+				</div>
+					
+			</div>
+			
+		</div>
+
+	</div>
+
+</div>
+	
